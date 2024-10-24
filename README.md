@@ -1,4 +1,19 @@
 
+# Comments 
+
+Considerations:
+1. Register and store API keys in Rails credentials (See 2 and 3)
+2. Use Google Geocoding API to convert to lat/long, but make it generic enough that we can use different API in the future -> Make sure to create the appropriate tests
+3. Use OpenWeatherMap API, but make it generic enough that we can use different API in the future -> Make sure to create the appropriate tests
+4. Create Models -> make sure to create the appropriate tests
+5. Create Controller -> make sure to create the appropriate tests
+6. Create Views -> make sure to create the appropriate tests
+7. Cache -> make sure to create the appropriate tests
+
+Areas of Improvement:
+1. What if Weather API does not use Geolocation?
+2. Right now I am going to use Rails Cache without a backend, so when the application is restarted the cache will be reinitialized.  Use better caching mechanism, probably REDIS
+3. Performance will not be great when retrieving.  Will need to find a better approach
 
 # Problem
 ## Requirements:
